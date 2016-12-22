@@ -73,3 +73,6 @@ test integration --class ~.repository.VetRepository
 test integration --class ~.repository.OwnerRepository
 test integration --class ~.repository.VisitRepository
 test integration --class ~.repository.PetRepository
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2016-12-22 20:24:05
+exit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2016-12-22 20:25:44

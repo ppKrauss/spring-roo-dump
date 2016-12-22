@@ -12,9 +12,9 @@ import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.roo.petclinic.dod.PetDataOnDemand;
 import org.springframework.roo.petclinic.dod.VetDataOnDemand;
 import org.springframework.roo.petclinic.dod.VisitDataOnDemand;
-import org.springframework.roo.petclinic.domain.Pet;
 import org.springframework.roo.petclinic.domain.Visit;
 import org.springframework.roo.petclinic.repository.VisitRepository;
 import org.springframework.stereotype.Component;
@@ -42,6 +42,12 @@ privileged aspect VisitDataOnDemand_Roo_DataOnDemand {
      * TODO Auto-generated attribute documentation
      */
     @Autowired
+    PetDataOnDemand VisitDataOnDemand.petDataOnDemand;
+    
+    /**
+     * TODO Auto-generated attribute documentation
+     */
+    @Autowired
     VetDataOnDemand VisitDataOnDemand.vetDataOnDemand;
     
     /**
@@ -62,7 +68,6 @@ privileged aspect VisitDataOnDemand_Roo_DataOnDemand {
     public Visit VisitDataOnDemand.getNewTransientVisit(int index) {
         Visit obj = new Visit();
         setDescription(obj, index);
-        setPet(obj, index);
         setVisitDate(obj, index);
         return obj;
     }
@@ -79,17 +84,6 @@ privileged aspect VisitDataOnDemand_Roo_DataOnDemand {
             description = description.substring(0, 255);
         }
         obj.setDescription(description);
-    }
-    
-    /**
-     * TODO Auto-generated method documentation
-     * 
-     * @param obj
-     * @param index
-     */
-    public void VisitDataOnDemand.setPet(Visit obj, int index) {
-        Pet pet = null;
-        obj.setPet(pet);
     }
     
     /**
