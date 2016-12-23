@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-<parent><!-- new -->
+<parent>
+        <!-- new -->
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.4.3.RELEASE</version>
@@ -37,7 +38,8 @@
             <name>Spring Roo Repository</name>
             <url>http://spring-roo-repository.springsource.org/release</url>
         </repository>
-         <repository><!-- new -->
+         <repository>
+            <!-- new -->
            <id>spring-releases</id>
            <url>https://repo.spring.io/libs-release</url>
          </repository>
@@ -59,7 +61,8 @@
             <name>Spring Roo Repository</name>
             <url>http://spring-roo-repository.springsource.org/release</url>
         </pluginRepository>
-	    <pluginRepository><!-- new -->
+	    <pluginRepository>
+            <!-- new -->
 		<id>spring-releases</id>
 		<url>https://repo.spring.io/libs-release</url>
 	    </pluginRepository>
@@ -301,7 +304,8 @@
             <artifactId>tiles-jsp</artifactId>
             <version>2.2.2</version>
         </dependency>
-    <dependency><!-- new -->
+    <dependency>
+            <!-- new -->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
@@ -314,6 +318,16 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <!-- <configuration> <webXml>target/web.xml</webXml> </configuration> -->
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <excludes>
+                                <exclude>dbre.xml</exclude>
+                            </excludes>
+                            <directory>src/main/resources</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
