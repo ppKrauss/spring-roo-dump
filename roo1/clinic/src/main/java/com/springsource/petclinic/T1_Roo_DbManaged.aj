@@ -15,7 +15,7 @@ privileged aspect T1_Roo_DbManaged {
     @OneToMany(mappedBy = "id1")
     private Set<T2> T1.t2s;
     
-    @Column(name = "a")
+    @Column(name = "a", columnDefinition = "int4")
     @NotNull
     private Integer T1.a;
     

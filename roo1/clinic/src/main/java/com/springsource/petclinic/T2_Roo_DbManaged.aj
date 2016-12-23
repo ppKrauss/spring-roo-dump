@@ -16,21 +16,21 @@ privileged aspect T2_Roo_DbManaged {
     @JoinColumn(name = "id1", referencedColumnName = "id", nullable = false)
     private T1 T2.id1;
     
-    @Column(name = "a")
+    @Column(name = "a", columnDefinition = "int4")
     @NotNull
     private Integer T2.a;
     
-    @Column(name = "txt")
+    @Column(name = "txt", columnDefinition = "text")
     @NotNull
     private String T2.txt;
     
-    @Column(name = "jpure")
+    @Column(name = "jpure", columnDefinition = "json")
     private String T2.jpure;
     
-    @Column(name = "jbin")
+    @Column(name = "jbin", columnDefinition = "jsonb")
     private String T2.jbin;
     
-    @Column(name = "t")
+    @Column(name = "t", columnDefinition = "xml")
     private String T2.t;
     
     public T1 T2.getId1() {

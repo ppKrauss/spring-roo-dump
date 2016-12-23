@@ -19,7 +19,7 @@ privileged aspect T2_Roo_Jpa_Entity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "id", columnDefinition = "serial")
     private Integer T2.id;
     
     public Integer T2.getId() {

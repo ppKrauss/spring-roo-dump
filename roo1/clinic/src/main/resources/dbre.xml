@@ -3,8 +3,8 @@
     <option key="moduleName" value=""/>
     <option key="activeRecord" value="true"/>
     <option key="repository" value="false"/>
-    <option key="service" value="false"/>
-    <option key="includeNonPortableAttributes" value="false"/>
+    <option key="service" value="true"/>
+    <option key="includeNonPortableAttributes" value="true"/>
     <option key="disableVersionFields" value="false"/>
     <option key="disableGeneratedIdentifiers" value="false"/>
     <option key="testAutomatically" value="false"/>
