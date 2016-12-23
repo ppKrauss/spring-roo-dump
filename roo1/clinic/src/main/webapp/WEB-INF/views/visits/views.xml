@@ -13,13 +13,4 @@
 <definition extends="default" name="visits/update">
         <put-attribute name="body" value="/WEB-INF/views/visits/update.jspx"/>
     </definition>
-<definition extends="default" name="visits/findVisitsByDescriptionAndVisitDate">
-        <put-attribute name="body" value="/WEB-INF/views/visits/findVisitsByDescriptionAndVisitDate.jspx"/>
-    </definition>
-<definition extends="default" name="visits/findVisitsByDescriptionLike">
-        <put-attribute name="body" value="/WEB-INF/views/visits/findVisitsByDescriptionLike.jspx"/>
-    </definition>
-<definition extends="default" name="visits/findVisitsByVisitDateBetween">
-        <put-attribute name="body" value="/WEB-INF/views/visits/findVisitsByVisitDateBetween.jspx"/>
-    </definition>
 </tiles-definitions>

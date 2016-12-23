@@ -8,7 +8,6 @@
         <field:textarea field="address" id="c_com_springsource_petclinic_domain_Owner_address" required="true" z="F58lrymQYAb+vI2R18H+u5MV3co="/>
         <field:input field="city" id="c_com_springsource_petclinic_domain_Owner_city" max="30" required="true" z="KeFguNGWsgzbj3W5t5xAQ67nB8w="/>
         <field:input field="telephone" id="c_com_springsource_petclinic_domain_Owner_telephone" required="true" z="UArcYWJhCMGb8fdNhd+tPR7lGZA="/>
-        <field:input field="homePage" id="c_com_springsource_petclinic_domain_Owner_homePage" max="30" z="/vNZCeUDVvKka/dick16UkqxCeM="/>
         <field:input field="email" id="c_com_springsource_petclinic_domain_Owner_email" max="30" min="6" required="true" validationMessageCode="field_invalid_email" z="6K/YKiplczYOIbaSmbC1gSc6H+I="/>
         <field:datetime dateTimePattern="${owner_birthday_date_format}" field="birthDay" id="c_com_springsource_petclinic_domain_Owner_birthDay" required="true" z="hePNmv60SdPIC9BHED+b/A3wvL8="/>
         <field:simple field="pets" id="c_com_springsource_petclinic_domain_Owner_pets" messageCode="entity_reference_not_managed" messageCodeAttribute="Pet" z="mFNdxgNw45XzY+L48hMYPWM8B4E="/>

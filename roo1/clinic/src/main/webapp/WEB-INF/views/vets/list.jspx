@@ -9,7 +9,7 @@
             <table:column id="c_com_springsource_petclinic_domain_Vet_address" property="address" z="2QjFZkOr2UAy0+VLhr5ZBkW/naI="/>
             <table:column id="c_com_springsource_petclinic_domain_Vet_city" property="city" z="/AV2JBG+KjaVJFyZPi+rstxabt8="/>
             <table:column id="c_com_springsource_petclinic_domain_Vet_telephone" property="telephone" z="5xk10mK2aW/MihjO8KJexUAZ+P0="/>
-            <table:column id="c_com_springsource_petclinic_domain_Vet_homePage" property="homePage" z="RgHZp7zQnTT090tCznp+IB13rGM="/>
+            <table:column id="c_com_springsource_petclinic_domain_Vet_email" property="email" z="gbBu4YBM28RPRt5hA5qPL//UM1M="/>
         </table:table>
     </page:list>
 </div>

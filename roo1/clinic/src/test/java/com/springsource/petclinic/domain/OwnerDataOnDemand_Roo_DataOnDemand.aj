@@ -32,7 +32,6 @@ privileged aspect OwnerDataOnDemand_Roo_DataOnDemand {
         setCity(obj, index);
         setEmail(obj, index);
         setFirstName(obj, index);
-        setHomePage(obj, index);
         setLastName(obj, index);
         setTelephone(obj, index);
         return obj;
@@ -73,14 +72,6 @@ privileged aspect OwnerDataOnDemand_Roo_DataOnDemand {
             firstName = firstName.substring(0, 30);
         }
         obj.setFirstName(firstName);
-    }
-    
-    public void OwnerDataOnDemand.setHomePage(Owner obj, int index) {
-        String homePage = "homePage_" + index;
-        if (homePage.length() > 30) {
-            homePage = homePage.substring(0, 30);
-        }
-        obj.setHomePage(homePage);
     }
     
     public void OwnerDataOnDemand.setLastName(Owner obj, int index) {

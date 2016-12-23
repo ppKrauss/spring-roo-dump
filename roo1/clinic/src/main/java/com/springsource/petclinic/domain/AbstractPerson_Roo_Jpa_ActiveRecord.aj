@@ -14,7 +14,7 @@ privileged aspect AbstractPerson_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager AbstractPerson.entityManager;
     
-    public static final List<String> AbstractPerson.fieldNames4OrderClauseFilter = java.util.Arrays.asList("firstName", "lastName", "address", "city", "telephone", "homePage", "email", "birthDay");
+    public static final List<String> AbstractPerson.fieldNames4OrderClauseFilter = java.util.Arrays.asList("firstName", "lastName", "address", "city", "telephone", "email", "birthDay");
     
     public static final EntityManager AbstractPerson.entityManager() {
         EntityManager em = new AbstractPerson() {

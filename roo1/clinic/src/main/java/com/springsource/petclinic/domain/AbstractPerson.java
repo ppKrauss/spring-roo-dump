@@ -44,11 +44,6 @@ public abstract class AbstractPerson {
 
     /**
      */
-    @Size(max = 30)
-    private String homePage;
-
-    /**
-     */
     @Size(min = 6, max = 30)
     private String email;
 

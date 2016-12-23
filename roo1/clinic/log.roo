@@ -1,11 +1,11 @@
-// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:42:07
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-23 08:08:12
 project --topLevelPackage com.springsource.petclinic
-jpa setup --provider HIBERNATE --database POSTGRES --databaseName clinic --userName postgresql --password postgres
-// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:45:30
+jpa setup --provider HIBERNATE --database POSTGRES --databaseName clinic --userName postgres --password postgres
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-23 08:10:54
 enum type --class ~.reference.PetType
 enum constant --name Dog
 enum constant --name Cat
-// [failed] enum constant --name Bird
+enum constant --name Bird
 enum type --class ~.reference.Specialty
 enum constant --name Cardiology
 enum constant --name Dentistry
@@ -20,7 +20,7 @@ field string --fieldName lastName --notNull --sizeMin 3 --sizeMax 30
 field string --fieldName address --notNull --sizeMax 50 --sizeMin 1
 field string --fieldName city --notNull --sizeMax 30
 field string --fieldName telephone --notNull
-field string --fieldName homePage --sizeMax 30
+// [failed] field string --fieldName homePage --sizeMax 30
 field string --fieldName email --sizeMax 30 --sizeMin 6
 field date --fieldName birthDay --type java.util.Date --notNull
 field string --fieldName description --sizeMax 255 --class ~.domain.Visit
@@ -48,7 +48,7 @@ test integration --entity ~.domain.Pet
 test integration --entity ~.domain.Visit
 web mvc setup
 web mvc all --package ~.web
-web mvc finder all
+// [failed] web mvc finder all
 web mvc language --code de
 web mvc language --code es
 selenium test --controller ~.web.OwnerController
@@ -56,7 +56,3 @@ selenium test --controller ~.web.PetController
 selenium test --controller ~.web.VetController
 selenium test --controller ~.web.VisitController
 logging setup --level INFO
-// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:47:49
-// [failed] database reverse engineer --schema public --includeTables "test1 test2"
-quit
-// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:48:33

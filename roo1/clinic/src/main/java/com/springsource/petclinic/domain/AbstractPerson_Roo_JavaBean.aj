@@ -48,14 +48,6 @@ privileged aspect AbstractPerson_Roo_JavaBean {
         this.telephone = telephone;
     }
     
-    public String AbstractPerson.getHomePage() {
-        return this.homePage;
-    }
-    
-    public void AbstractPerson.setHomePage(String homePage) {
-        this.homePage = homePage;
-    }
-    
     public String AbstractPerson.getEmail() {
         return this.email;
     }

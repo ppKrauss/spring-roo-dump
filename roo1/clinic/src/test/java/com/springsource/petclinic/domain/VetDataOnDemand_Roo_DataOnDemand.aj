@@ -34,7 +34,6 @@ privileged aspect VetDataOnDemand_Roo_DataOnDemand {
         setEmail(obj, index);
         setEmployedSince(obj, index);
         setFirstName(obj, index);
-        setHomePage(obj, index);
         setLastName(obj, index);
         setSpecialty(obj, index);
         setTelephone(obj, index);
@@ -81,14 +80,6 @@ privileged aspect VetDataOnDemand_Roo_DataOnDemand {
             firstName = firstName.substring(0, 30);
         }
         obj.setFirstName(firstName);
-    }
-    
-    public void VetDataOnDemand.setHomePage(Vet obj, int index) {
-        String homePage = "homePage_" + index;
-        if (homePage.length() > 30) {
-            homePage = homePage.substring(0, 30);
-        }
-        obj.setHomePage(homePage);
     }
     
     public void VetDataOnDemand.setLastName(Vet obj, int index) {
